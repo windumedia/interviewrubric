@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Response Rubric</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    td.selected {
+      background-color: #add8e6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interview Response Rubric</h1>
+  <label for="studentName"><strong>Student Name:</strong></label>
+  <input type="text" id="studentName" placeholder="Enter student's name here">
+
+  <table id="rubricTable">
+    <thead>
+      <tr>
+        <th>Criteria</th>
+        <th>1 - Try Again</th>
+        <th>2 - Needs More Thought</th>
+        <th>3 - Needs Examples/Elaboration</th>
+        <th>4 - Good, Needs Details</th>
+        <th>5 - Great!</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Clarity of Response</td><td>Unclear, confusing</td><td>Somewhat unclear</td><td>Understandable but vague</td><td>Mostly clear</td><td>Very clear and articulate</td></tr>
+      <tr><td>Relevance to Question</td><td>Off-topic</td><td>Partially on-topic</td><td>Mostly relevant</td><td>Directly answers</td><td>Fully addresses with depth</td></tr>
+      <tr><td>Confidence and Delivery</td><td>Hesitant</td><td>Some confidence</td><td>Somewhat confident</td><td>Confident with minor issues</td><td>Very confident</td></tr>
+      <tr><td>Organization of Thoughts</td><td>Rambling</td><td>Some structure</td><td>Choppy</td><td>Mostly fluid</td><td>Well-structured</td></tr>
+      <tr><td>Use of Examples</td><td>No examples</td><td>Ideas only</td><td>Basic example</td><td>Detailed examples</td><td>Strong examples</td></tr>
+      <tr><td>Depth of Insight</td><td>Surface-level</td><td>Reflective</td><td>Emerging insight</td><td>Good insight</td><td>Deep analysis</td></tr>
+      <tr><td>Authenticity</td><td>Scripted</td><td>Somewhat genuine</td><td>Some personality</td><td>Mostly authentic</td><td>Very genuine</td></tr>
+      <tr><td>Language/Word Choice</td><td>Poor</td><td>Basic</td><td>Adequate</td><td>Strong</td><td>Engaging, precise</td></tr>
+      <tr><td>Enthusiasm/Engagement</td><td>Flat</td><td>Low energy</td><td>Moderate</td><td>Good energy</td><td>High enthusiasm</td></tr>
+      <tr><td>Professionalism</td><td>Unprofessional</td><td>Casual</td><td>Mostly professional</td><td>Minor issues</td><td>Polished</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    const table = document.getElementById('rubricTable');
+    table.addEventListener('click', function(e) {
+      const cell = e.target;
+      if (cell.tagName === 'TD') {
+        const row = cell.parentElement;
+        Array.from(row.children).forEach(td => td.classList.remove('selected'));
+        cell.classList.add('selected');
+      }
+    });
+  </script>
+</body>
+</html>
 
