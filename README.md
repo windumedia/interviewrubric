@@ -1,0 +1,2 @@
+# interviewrubric
+rubric for interview 
