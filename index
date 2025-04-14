@@ -62,22 +62,4 @@
       <tr><td>Depth of Insight</td><td>Surface-level</td><td>Reflective</td><td>Emerging insight</td><td>Good insight</td><td>Deep analysis</td></tr>
       <tr><td>Authenticity</td><td>Scripted</td><td>Somewhat genuine</td><td>Some personality</td><td>Mostly authentic</td><td>Very genuine</td></tr>
       <tr><td>Language/Word Choice</td><td>Poor</td><td>Basic</td><td>Adequate</td><td>Strong</td><td>Engaging, precise</td></tr>
-      <tr><td>Enthusiasm/Engagement</td><td>Flat</td><td>Low energy</td><td>Moderate</td><td>Good energy</td><td>High enthusiasm</td></tr>
-      <tr><td>Professionalism</td><td>Unprofessional</td><td>Casual</td><td>Mostly professional</td><td>Minor issues</td><td>Polished</td></tr>
-    </tbody>
-  </table>
-
-  <script>
-    const table = document.getElementById('rubricTable');
-    table.addEventListener('click', function(e) {
-      const cell = e.target;
-      if (cell.tagName === 'TD') {
-        const row = cell.parentElement;
-        Array.from(row.children).forEach(td => td.classList.remove('selected'));
-        cell.classList.add('selected');
-      }
-    });
-  </script>
-</body>
-</html>
-
+      <tr><td>En
