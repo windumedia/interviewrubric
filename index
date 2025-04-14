@@ -54,14 +54,21 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>Clarity</td><td>Unclear</td><td>Somewhat unclear</td><td>Understandable</td><td>Mostly clear</td><td>Very clear</td></tr>
-      <tr><td>Relevance</td><td>Off-topic</td><td>Partially on-topic</td><td>Mostly relevant</td><td>Direct</td><td>Fully addresses</td></tr>
-      <tr><td>Confidence</td><td>Hesitant</td><td>Some confidence</td><td>Okay</td><td>Confident</td><td>Very confident</td></tr>
+      <tr><td>Clarity of Response</td><td>Unclear, confusing</td><td>Somewhat unclear</td><td>Understandable but vague</td><td>Mostly clear</td><td>Very clear and articulate</td></tr>
+      <tr><td>Relevance to Question</td><td>Off-topic</td><td>Partially on-topic</td><td>Mostly relevant</td><td>Directly answers</td><td>Fully addresses with depth</td></tr>
+      <tr><td>Confidence and Delivery</td><td>Hesitant</td><td>Some confidence</td><td>Somewhat confident</td><td>Confident with minor issues</td><td>Very confident</td></tr>
+      <tr><td>Organization of Thoughts</td><td>Rambling</td><td>Some structure</td><td>Choppy</td><td>Mostly fluid</td><td>Well-structured</td></tr>
+      <tr><td>Use of Examples</td><td>No examples</td><td>Ideas only</td><td>Basic example</td><td>Detailed examples</td><td>Strong examples</td></tr>
+      <tr><td>Depth of Insight</td><td>Surface-level</td><td>Reflective</td><td>Emerging insight</td><td>Good insight</td><td>Deep analysis</td></tr>
+      <tr><td>Authenticity</td><td>Scripted</td><td>Somewhat genuine</td><td>Some personality</td><td>Mostly authentic</td><td>Very genuine</td></tr>
+      <tr><td>Language/Word Choice</td><td>Poor</td><td>Basic</td><td>Adequate</td><td>Strong</td><td>Engaging, precise</td></tr>
+      <tr><td>Enthusiasm/Engagement</td><td>Flat</td><td>Low energy</td><td>Moderate</td><td>Good energy</td><td>High enthusiasm</td></tr>
+      <tr><td>Professionalism</td><td>Unprofessional</td><td>Casual</td><td>Mostly professional</td><td>Minor issues</td><td>Polished</td></tr>
     </tbody>
   </table>
 
   <script>
-    // Allow every individual cell (except first column) to toggle independently
+    // Allow each cell (except first column) to toggle independently
     const table = document.getElementById('rubricTable');
 
     table.addEventListener('click', function (e) {
