@@ -61,22 +61,13 @@
   </table>
 
   <script>
+    // Allow every individual cell (except first column) to toggle independently
     const table = document.getElementById('rubricTable');
+
     table.addEventListener('click', function (e) {
       const cell = e.target;
       if (cell.tagName === 'TD' && cell.cellIndex !== 0) {
-        const row = cell.parentElement;
-        const alreadySelected = cell.classList.contains('selected');
-
-        // Remove selection from other cells in the same row
-        Array.from(row.children).forEach(td => {
-          if (td.cellIndex !== 0) td.classList.remove('selected');
-        });
-
-        // Toggle the clicked cell
-        if (!alreadySelected) {
-          cell.classList.add('selected');
-        }
+        cell.classList.toggle('selected');
       }
     });
   </script>
